@@ -1,0 +1,406 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* adds soft shadow */
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.navbar-brand img {
+  border-radius: 6px;
+}
+
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header and Navigation */
+.hero {
+  background: url('') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* Optional: Overlay for better text readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   background-image: url(bg-img.png);
+  background-size: cover;
+  /* Ensures image covers full area */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents repeating */
+  opacity: 0.8;
+  /* Optional: slightly transparent */
+  z-index: 0;
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  background: #f4f4f4;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 80px;
+  border-radius: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: #ffffff;
+  /* or your background image if used */
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #f8f9fc;
+  /* Deep grey-blue, readable and modern */
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #f7f8f8;
+  /* Slightly lighter than the heading */
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ee6408;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #007e83;
+}
+
+
+/* About Section */
+.about {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Services Section */
+/* .services {
+    background: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-cards .card {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  } */
+.text-orange {
+  color: orange;
+  transition: color 0.3s ease;
+}
+
+.text-orange:hover {
+  color: #ff6600;
+}
+
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.text-orange:hover .arrow {
+  transform: translateX(5px);
+}
+
+
+/* Portfolio Section */
+.portfolio {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-item h3 {
+  margin: 10px 0;
+}
+
+/* Insights Section */
+.insights {
+  background: #f4f4f4;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.insight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.insight-cards .card {
+  background: #fff;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.insight-card {
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.insight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background: #ff6600;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e65c00;
+}
+
+/* Fonts and layout */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-section {
+  background: linear-gradient(to right, #f6f8fc, #eef1f5);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Glassmorphism form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f1f1f1;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 2px #ff6600;
+}
+
+/* Stylish button */
+.contact-form button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e65c00;
+}
+
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-cards,
+  .portfolio-gallery,
+  .insight-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

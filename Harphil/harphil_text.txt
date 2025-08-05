@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harphil Private ltd | Web Development & Data Analytics</title>
+    <link rel="stylesheet" href="harphil.css">
+    <!-- In your <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Section 1: Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSfkQZdB7er9hljYQmT_X6BVAz1n3ec0iHQ&s"
+                    alt="Harphil Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#footer">More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section 2: Hero -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <h1>Welcome to Harphil Private ltd</h1>
+            <p>Your trusted partner in Web Development and Data Processing Analytics</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Section 3: About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Harphil, we blend innovative web design with powerful data analytics to transform your digital
+                presence and drive business growth.</p>
+            <p>Our experienced team leverages modern technologies to craft beautiful websites, develop robust
+                applications, and deliver actionable insights from data.</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">Our Services</h2>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0 p-3">
+                <h3 class="service-title mb-3">
+                  <a href="web.html" class="text-decoration-none text-orange">
+                    Custom Web Development <span class="arrow">→</span>
+                  </a>
+                </h3>
+                <p class="text-muted">
+                  At Harphil, we specialize in crafting responsive, visually stunning websites that align with your brand goals.
+                  From landing pages to scalable platforms—we turn ideas into reality.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0 p-3">
+                <h3 class="service-title mb-3">
+                  <a href="analytics.html" class="text-decoration-none text-orange">
+                    Data Analytics <span class="arrow">→</span>
+                  </a>
+                </h3>
+                <p class="text-muted">
+                  Harphil empowers businesses to unlock insights from data, driving better decisions and strategy through advanced analytics.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0 p-3">
+                <h3 class="service-title mb-3">
+                  <a href="marketing.html" class="text-decoration-none text-orange">
+                    Digital Marketing <span class="arrow">→</span>
+                  </a>
+                </h3>
+                <p class="text-muted">
+                  With data-driven strategies in SEO, social media, and ads, Harphil boosts your brand’s digital presence and ROI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+    <!-- Section 5: Portfolio / Projects -->
+    <section id="portfolio" class="portfolio py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">Our Projects</h2>
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+              <div class="portfolio-item text-center">
+                <img src="https://images.unsplash.com/photo-1621857093087-7daa85ab14a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D
+                " alt="SkillSphere" class="img-fluid rounded shadow-sm mb-3">
+                <h3>SkillSphere</h3>
+                <p>An intelligent EdTech platform offering personalized course recommendations and progress tracking for students and professionals.</p>
+              </div>
+            </div>
+      
+            <!-- Project 2 -->
+            <div class="col-md-4">
+              <div class="portfolio-item text-center">
+                <img src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=IIZaVsQl6mMcOPgyPrVm8ZlCSBwKdwWju4TTnM7BM4Q=" alt="InsightIQ" class="img-fluid rounded shadow-sm mb-3">
+                <h3>InsightIQ</h3>
+                <p>A real-time data analytics dashboard helping businesses gain deeper insights and make smarter decisions with visualized reports.</p>
+              </div>
+            </div>
+      
+            <!-- Project 3 -->
+            <div class="col-md-4">
+              <div class="portfolio-item text-center">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="ReachRise" class="img-fluid rounded shadow-sm mb-3">
+                <h3>ReachRise</h3>
+                <p>A smart digital marketing tool for automating campaigns, tracking reach, and optimizing ROI across social and search platforms.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Section 6: Insights / Blog -->
+  <!-- Include Bootstrap Icons if not already included -->
+
+<section id="insights" class="insights py-5" style="background-color: #f8f9fa;">
+    <div class="container text-center">
+        <h2 class="mb-5 fw-bold text-dark">Latest Insights</h2>
+        <div class="row insight-cards g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card p-4 shadow-sm border-0 insight-card h-100">
+                    <div class="mb-3">
+                        <i class="bi bi-laptop fs-2 text-warning"></i>
+                    </div>
+                    <h3 class="fw-semibold text-dark">Trends in Web Design</h3>
+                    <p class="text-muted">Discover the latest trends that are shaping the future of web development.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="card p-4 shadow-sm border-0 insight-card h-100">
+                    <div class="mb-3">
+                        <i class="bi bi-graph-up-arrow fs-2 text-primary"></i>
+                    </div>
+                    <h3 class="fw-semibold text-dark">Data Processing Best Practices</h3>
+                    <p class="text-muted">Learn how to make the most of your data with our expert guides.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="contact-title">Contact Us</h2>
+    <p class="contact-subtitle">Ready to transform your online presence? Reach out to us today!</p>
+    
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Harphil Private ltd. All rights reserved.</p>
+            <p>Follow us on
+                <a href="#">LinkedIn</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* adds soft shadow */
+}
+
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header and Navigation */
+  .hero {
+    background: url('/mnt/data/image.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+/* Optional: Overlay for better text readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://sdmntprwestus.oaiusercontent.com/files/00000000-3b24-6230-bc23-92185b53d47e/raw?se=2025-04-10T02%3A20%3A41Z&sp=r&sv=2024-08-04&sr=b&scid=fde5fac9-e2c9-5721-be55-27990e25fd37&skoid=e4438ed3-2a6f-4fd3-bf63-222012dc627c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-09T20%3A57%3A27Z&ske=2025-04-10T20%3A57%3A27Z&sks=b&skv=2024-08-04&sig=tAETA9/JlQXpQXP03H4GA06yj79PQVp4ROrLHCJl5io%3D');
+    background-size: cover;          /* Ensures image covers full area */
+    background-position: center;     /* Centers the image */
+    background-repeat: no-repeat;    /* Prevents repeating */
+    opacity: 0.8;                    /* Optional: slightly transparent */
+    z-index: 0;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+  header {
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #ffffff; /* or your background image if used */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #f8f9fc; /* Deep grey-blue, readable and modern */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #f7f8f8; /* Slightly lighter than the heading */
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ee6408;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007e83;
+}
+
+  
+  /* About Section */
+  .about {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Services Section */
+  /* .services {
+    background: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-cards .card {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  } */
+  .text-orange {
+    color: orange;
+    transition: color 0.3s ease;
+  }
+  
+  .text-orange:hover {
+    color: #ff6600;
+  }
+  
+  .arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .text-orange:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  
+  /* Portfolio Section */
+  .portfolio {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  .portfolio-item h3 {
+    margin: 10px 0;
+  }
+  
+  /* Insights Section */
+  .insights {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .insight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .insight-cards .card {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  .insight-card {
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.insight-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+  /* Contact Section */
+  .contact {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #e65c00;
+  }
+/* Fonts and layout */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-section {
+    background: linear-gradient(to right, #f6f8fc, #eef1f5);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .contact-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  /* Glassmorphism form */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #f1f1f1;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 0 2px #ff6600;
+  }
+  
+  /* Stylish button */
+  .contact-form button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #e65c00;
+  }
+  
+
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+    }
+    .nav-links {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .nav-links li {
+      margin: 10px 0;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .service-cards, .portfolio-gallery, .insight-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

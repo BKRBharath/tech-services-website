@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harphil Private ltd | Web Development & Data Analytics</title>
+    <link rel="stylesheet" href="harphil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #auth-toggle {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+    
+
+
+        .auth-btn:hover {
+            background-color: black;
+            color: orange;
+        }
+
+        .auth-btn {
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-btn span {
+            display: inline-block;
+            transition: opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .auth-btn.fade-out span {
+            opacity: 0;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header class="bg-white shadow-sm sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <a class="navbar-brand" href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSfkQZdB7er9hljYQmT_X6BVAz1n3ec0iHQ&s"
+                        alt="Harphil Logo" class="rounded-circle" height="70" width="70">
+                </a>
+
+                <!-- Hamburger Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#insights">Insights</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!-- <li class="nav-item"><a class="nav-link" href="#footer">Sign Up</a></li> -->
+                        <li class="nav-item">
+                            <a id="auth-toggle" class="nav-link auth-btn" href="signup.html">
+                                <span>Sign Up</span>
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const toggleLink = document.getElementById("auth-toggle");
+        let showSignUp = true;
+      
+        setInterval(() => {
+          toggleLink.classList.add("fade-out");
+      
+          setTimeout(() => {
+            const text = showSignUp ? "Sign In" : "Sign Up";
+            const link = showSignUp ? "signin.html" : "signup.html";
+      
+            toggleLink.innerHTML = `<span>${text}</span>`;
+            toggleLink.setAttribute("href", link);
+      
+            toggleLink.classList.remove("fade-out");
+            showSignUp = !showSignUp;
+          }, 300); // Duration matches the CSS transition
+        }, 3000); // Change every 3 seconds
+      </script>
+      
+
+
+
+
+
+
+    <!-- Section 2: Hero -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <h1>Welcome to Harphil Private ltd</h1>
+            <p>Your trusted partner in Web Development and Data Processing Analytics</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Section 3: About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Harphil, we blend innovative web design with powerful data analytics to transform your digital
+                presence and drive business growth.</p>
+            <p>Our experienced team leverages modern technologies to craft beautiful websites, develop robust
+                applications, and deliver actionable insights from data.</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <h3 class="service-title mb-3">
+                            <a href="web.html" class="text-decoration-none text-orange">
+                                 Web Development <span class="arrow">→</span>
+                            </a>
+                        </h3>
+                        <p class="text-muted">
+                            At Harphil, we specialize in crafting responsive, visually stunning websites that align with
+                            your brand goals.
+                            From landing pages to scalable platforms
+                            <!-- —we turn ideas into reality. -->
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <h3 class="service-title mb-3">
+                            <a href="analytics.html" class="text-decoration-none text-orange">
+                                Data Analytics <span class="arrow">→</span>
+                            </a>
+                        </h3>
+                        <p class="text-muted">
+                            Harphil empowers businesses to unlock insights from data, driving better decisions and
+                            strategy through advanced analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <h3 class="service-title mb-3">
+                            <a href="marketing.html" class="text-decoration-none text-orange">
+                                Digital Marketing <span class="arrow">→</span>
+                            </a>
+                        </h3>
+                        <p class="text-muted">
+                            With data-driven strategies in SEO, social media, and ads, Harphil boosts your brand’s
+                            digital presence and ROI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section 5: Portfolio / Projects -->
+    <section id="portfolio" class="portfolio py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Projects</h2>
+            <div class="row justify-content-center gy-4">
+
+                <!-- Project 1 -->
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex">
+                    <div class="portfolio-item text-center p-3 bg-white rounded shadow-sm w-100">
+                        <img src="https://images.unsplash.com/photo-1621857093087-7daa85ab14a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="SkillSphere" class="img-fluid rounded shadow-sm mb-3">
+                        <h3>SkillSphere</h3>
+                        <p>An intelligent EdTech platform offering personalized course recommendations and progress
+                            tracking for students and professionals.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex">
+                    <div class="portfolio-item text-center p-3 bg-white rounded shadow-sm w-100">
+                        <img src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=IIZaVsQl6mMcOPgyPrVm8ZlCSBwKdwWju4TTnM7BM4Q="
+                            alt="InsightIQ" class="img-fluid rounded shadow-sm mb-3">
+                        <h3>InsightIQ</h3>
+                        <p>A real-time data analytics dashboard helping businesses gain deeper insights and make smarter
+                            decisions with visualized reports.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex">
+                    <div class="portfolio-item text-center p-3 bg-white rounded shadow-sm w-100">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
+                            alt="ReachRise" class="img-fluid rounded shadow-sm mb-3">
+                        <h3>ReachRise</h3>
+                        <p>A smart digital marketing tool for automating campaigns, tracking reach, and optimizing ROI
+                            across social and search platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section 6: Insights / Blog -->
+    <!-- Include Bootstrap Icons if not already included -->
+
+    <section id="insights" class="insights py-5" style="background-color: #f8f9fa;">
+        <div class="container text-center">
+            <h2 class="mb-5 fw-bold text-dark">Latest Insights</h2>
+            <div class="row insight-cards g-4 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card p-4 shadow-sm border-0 insight-card h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-laptop fs-2 text-warning"></i>
+                        </div>
+                        <h3 class="fw-semibold text-dark">Trends in Web Design</h3>
+                        <p class="text-muted">Discover the latest trends that are shaping the future of web development.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="card p-4 shadow-sm border-0 insight-card h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-graph-up-arrow fs-2 text-primary"></i>
+                        </div>
+                        <h3 class="fw-semibold text-dark">Data Processing Best Practices</h3>
+                        <p class="text-muted">Learn how to make the most of your data with our expert guides.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">Contact Us</h2>
+            <p class="contact-subtitle">Ready to transform your online presence? Reach out to us today!</p>
+
+            <form class="contact-form" id="whatsappForm">
+                <input type="text" name="name" placeholder="Your Name" id="name" required>
+                <input type="email" name="email" placeholder="Your Email" id="email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section> -->
+    <section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="contact-title">Contact Us</h2>
+    <p class="contact-subtitle">Ready to transform your online presence? Reach out to us today!</p>
+
+    <form class="contact-form" id="whatsappForm">
+      <input type="text" name="name" placeholder="Your Name" id="name" required>
+      <input type="email" name="email" placeholder="Your Email" id="email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" id="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("whatsappForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    // Set your WhatsApp number (country code + number)
+    let defaultNumber = "916309819339"; 
+
+    // Ensure the fields are not empty
+    if (!name || !email || !message) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
+    let whatsappMessage = `Hello, I am ${name}.\n\nThis is my Email: ${email}\n\n🗣 Message:\n${message}`;
+
+    // Encode the message for URL
+    let encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // WhatsApp API URL
+    let whatsappURL = `https://wa.me/${defaultNumber}?text=${encodedMessage}`;
+
+    // Open WhatsApp chat in new tab
+    window.open(whatsappURL, "_blank");
+  });
+});
+</script>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Harphil Private ltd. All rights reserved.</p>
+            <p>Follow us on
+                <a href="https://www.linkedin.com/in/dayala-bharath-kumar-reddy-1a4b44272/" target="_blank">LinkedIn</a> |
+                <a href="https://x.com/" target="_blank">Twitter</a> |
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
